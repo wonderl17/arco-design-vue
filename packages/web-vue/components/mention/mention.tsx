@@ -375,6 +375,7 @@ export default defineComponent({
                 ref={inputRef}
                 allowClear={props.allowClear}
                 modelValue={computedValue.value}
+                disabled={mergedDisabled.value}
                 onInput={handleInput}
                 onClear={handleClear}
                 onFocus={onFocus}
@@ -398,6 +399,7 @@ export default defineComponent({
                   preventFocus={true}
                   popupVisible={computedPopupVisible.value}
                   clickToClose={false}
+                  disabled={mergedDisabled.value}
                   onPopupVisibleChange={handlePopupVisibleChange}
                 >
                   <span>@</span>
